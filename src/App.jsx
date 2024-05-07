@@ -7,9 +7,13 @@ import ManageAdmin from './Pages/Manage__admin/Manage';
 import NotFound from './Components/Not__found/Notfound';
 import Homelink from './Pages/Homelink/Homelink';
 
+
+
 const App = () => {
   return (
     <>
+
+
       <Navbar />
       <Routes>
         <Route path="/admin" element={<CreateAdmin />} />

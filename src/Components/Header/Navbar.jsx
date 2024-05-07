@@ -4,7 +4,6 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { BsFillPersonFill } from 'react-icons/bs';
 import './Navbar.scss'; 
 import logo from "./img/logo.svg"
-import Product from '../Products/Product';
 import {NavLink } from 'react-router-dom';
 
 
@@ -16,7 +15,9 @@ const Navbar = () => {
 
     <>
       <header>
+
         <div className="Navbar Container">
+
           <div className="navlogo">
             <NavLink to={"/"}>
             <img src= {logo} alt="" />
@@ -28,13 +29,15 @@ const Navbar = () => {
             Home
             </NavLink>
 
+            <NavLink to={"/about"}> 
+              About
+            </NavLink>
+
             <NavLink to={"/admin"}> 
-            Admin Create
+            Admin 
             </NavLink>
-            <NavLink to={"/manage"}> 
-            Admin Manage
-            </NavLink>
-            <NavLink to={'/Product'}>
+          
+            <NavLink to={'/catalog'}>
               Catalog
             </NavLink>
           
@@ -55,7 +58,6 @@ const Navbar = () => {
         </div>
       </header>
 
-    {/* <Product/> */}
     </>
   );
 }
