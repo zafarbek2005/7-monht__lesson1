@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from '../../Api';
+import '../Create__product/create.scss'
 
 const Initialstate = {
   name: "",
@@ -19,19 +20,31 @@ const ManageProduct = () => {
 
   return (
     <>
-      <form onSubmit={handleProducts}>
-        <input
-          type="text"
-          value={data.name}
-          onChange={(e) => setData({ ...data, name: e.target.value })}
-        />
-        <input
-          type="text"
-          value={data.title}
-          onChange={(e) => setData({ ...data, title: e.target.value })}
-        />
-        <button type="submit">Submit</button>
-      </form>
+    <section id='se' >
+      
+          <div className="Conteiner">
+
+                <form onSubmit={handleProducts} >
+                      <input 
+                        type="text"
+                        value={data.name}
+                        onChange={(e) => setData({ ...data, name: e.target.value })}
+                        placeholder='Name'
+                        required
+                      /> <br />
+                      <input
+                        type="text"
+                        value={data.title}
+                        onChange={(e) => setData({ ...data, title: e.target.value })}
+                        placeholder='Title'
+                        required
+                      /> <br />
+                      <button type="submit">Submit</button>
+                </form>
+      </div>
+
+      </section>
+  
     </>
   );
 };
