@@ -61,7 +61,9 @@ const Create = () => {
 ));
   return (
     <>
-    <Saidbar/>
+     <div className="saidbar Conteiner">
+     <Saidbar className="saidbar "/>
+     </div>
 
     <section className='Conteiner wrapper'>
       {users}

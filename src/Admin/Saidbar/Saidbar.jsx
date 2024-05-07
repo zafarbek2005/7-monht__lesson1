@@ -23,11 +23,11 @@ export const Saidbar = () => {
       },
     }}
   >
-    <MenuItem component={<Link to="/admin" />}> Create</MenuItem>
-    <MenuItem component={<Link to="/manage" />}> Manage</MenuItem>
+    <MenuItem component={<Link to="/manage" />}> Create</MenuItem>
+    <MenuItem component={<Link to="/admin" />}> Manage</MenuItem>
     <MenuItem component={<Link to="/e-commerce" />}> E-commerce</MenuItem>
   </Menu>
-</Sidebar>;
+</Sidebar>
     
 
 <Sidebar>
@@ -39,7 +39,7 @@ export const Saidbar = () => {
     <MenuItem> Documentation </MenuItem>
     <MenuItem> Calendar </MenuItem>
   </Menu>
-</Sidebar>;
+</Sidebar>
 
 
 <section>
